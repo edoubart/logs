@@ -22,7 +22,7 @@ fn extract_errors(text: &str) -> Vec<String> {
  * Main Function *
  *****************/
 fn main() -> Result<(), Error> {
-    // 'Try' Operator version
+    // 'Try' Operator ('?') version
     let text = fs::read_to_string("logs.txt")?;
 
     let error_logs = extract_errors(text.as_str());
